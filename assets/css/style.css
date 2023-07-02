@@ -604,12 +604,13 @@ a {
 }
 
 .footer .social-link {
+    background: #f9f9f9;
     display: flex;
     justify-content: center;
     align-items: center;
     width: 29px;
     height: 29px;
-    border-radius: 5%;
+    border-radius: 5px;
     margin-left: 20px;
 }
 
