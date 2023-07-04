@@ -15,6 +15,11 @@ body {
     font-family: "Poppins", sans-serif;
 }
 
+body,
+html {
+    scroll-behavior: smooth;
+}
+
 /* =================== Common (Những thành phần dùng chung) ===================*/
 .content {
     width: 1110px;
@@ -70,7 +75,11 @@ a {
 .hero-wrap {
     position: relative;
     background: #e6f0ff;
-    height: 93.3vh;
+    height: calc(100vh - 64px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* Lấy 100vh trừ cho chiều cao của thanh navbar */
 }
 
 .navbar {
@@ -110,16 +119,12 @@ a {
     border-radius: 8px;
 }
 
-.hero {
-    padding-top: 130px;
-}
-
-.hero .info {
+.hero-wrap .info {
     width: 53%;
     padding: 100px 165px;
 }
 
-.hero .sub-title {
+.hero-wrap .sub-title {
     color: #687690;
     font-size: 1.8rem;
     font-weight: 500;
@@ -127,15 +132,15 @@ a {
     letter-spacing: 0.01em;
 }
 
-.hero .title {
+.hero-wrap .title {
     margin-top: 8px;
     color: #000336;
-    font-size: 5rem;
+    font-size: 6.4rem;
     font-weight: 700;
     line-height: 1.19;
 }
 
-.hero .desc {
+.hero-wrap .desc {
     margin-top: 30px;
     color: #5a6473;
     font-size: 1.5rem;
